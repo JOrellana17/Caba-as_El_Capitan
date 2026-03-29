@@ -143,14 +143,18 @@ a {
     display: flex;
     align-items: center;
     gap: 0.45rem;
+    flex: 0 0 auto;
 }
 
 .social-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex: 0 0 auto;
     width: 2.6rem;
     height: 2.6rem;
+    min-width: 2.6rem;
+    min-height: 2.6rem;
     border-radius: 999px;
     border: 1px solid rgba(91, 58, 41, 0.12);
     background: rgba(255, 255, 255, 0.76);
@@ -820,6 +824,7 @@ a {
     }
 
     .header-row {
+        position: relative;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -839,22 +844,33 @@ a {
     }
 
     .site-nav {
+        position: absolute;
+        top: calc(100% + 0.45rem);
+        left: 0;
+        right: 0;
         width: 100%;
         justify-content: flex-start;
         flex-direction: column;
         align-items: stretch;
         gap: 0.35rem;
         max-height: 0;
+        padding: 0;
         overflow: hidden;
         opacity: 0;
         transform: translateY(-8px);
+        background: rgba(255, 250, 244, 0.98);
+        border: 1px solid rgba(91, 58, 41, 0.12);
+        border-radius: 16px;
+        box-shadow: 0 14px 26px rgba(54, 33, 23, 0.12);
         transition: max-height 0.28s ease, opacity 0.2s ease, transform 0.2s ease;
+        z-index: 8;
     }
 
     .site-nav.is-open {
-        max-height: 320px;
+        max-height: 260px;
         opacity: 1;
         transform: translateY(0);
+        padding: 0.35rem;
     }
 
     .site-nav a {
@@ -864,9 +880,10 @@ a {
     }
 
     .social-links {
-        width: 100%;
-        justify-content: flex-start;
-        padding-top: 0.2rem;
+        margin-left: auto;
+        width: auto;
+        justify-content: flex-end;
+        padding-top: 0;
     }
 
     .hero {
@@ -951,12 +968,19 @@ a {
     }
 
     .social-links {
-        gap: 0.35rem;
+        gap: 0.3rem;
     }
 
     .social-icon {
-        width: 2.35rem;
-        height: 2.35rem;
+        width: 2rem;
+        height: 2rem;
+        min-width: 2rem;
+        min-height: 2rem;
+    }
+
+    .social-icon svg {
+        width: 0.92rem;
+        height: 0.92rem;
     }
 
     .hero-actions {
