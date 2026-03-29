@@ -3,6 +3,7 @@ const selectorsForReveal = [
     ".hero-card",
     ".intro-strip .container",
     ".section-heading",
+    ".map-embed-card",
     ".amenities-grid article",
     ".story-copy",
     ".story-panel",
@@ -16,7 +17,8 @@ const cabinsData = [
         folder: "Cabaña Catalejo",
         cover: "1.jpg",
         tag: "Cabaña",
-        gallery: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
+        gallery: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"],
+        infoLink: "https://wa.me/50432860065?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20catalejo"
     },
     {
         folder: "Cabaña Estribor",
@@ -28,7 +30,8 @@ const cabinsData = [
             "0(2).jpg",
             "0(3).jpg",
             "abc33067-2c0f-479b-bc90-43a071959992.jpg"
-        ]
+        ],
+        infoLink: "https://wa.me/50432860065?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20estribor"
     },
     {
         folder: "Cabaña Familiar La Perla",
@@ -40,7 +43,8 @@ const cabinsData = [
             "1(2).jpg",
             "Imagen de WhatsApp 2025-08-24 a las 09.05.34_fccb1e98.jpg",
             "Imagen de WhatsApp 2025-08-24 a las 09.05.39_ec8af994.jpg"
-        ]
+        ],
+        infoLink: "https://wa.me/50432860065?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20familiar%20la%20perla"
     },
     {
         folder: "Cabaña Timonel",
@@ -52,7 +56,8 @@ const cabinsData = [
             "0(2).jpg",
             "47a4d81a-626b-4e63-aa96-0abffc2f4942.jpg",
             "e628900c-51de-4ee6-954b-5f850a3cf698.jpg"
-        ]
+        ],
+        infoLink: "https://wa.me/50432860065?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20timonel"
     },
     {
         folder: "Habitación Almeja",
@@ -64,19 +69,22 @@ const cabinsData = [
             "Imagen de WhatsApp 2025-08-24 a las 09.07.52_6cb7d3eb.jpg",
             "Imagen de WhatsApp 2025-08-24 a las 09.07.54_555eb8b2.jpg",
             "Imagen de WhatsApp 2025-08-24 a las 09.07.58_8918a9fa.jpg"
-        ]
+        ],
+        infoLink: "https://wa.me/50432860065?text=Hola%20necesito%20informacion%20sobre%20la%20habitacion%20almeja"
     },
     {
         folder: "Cabaña La Fragata",
         cover: "",
         tag: "Próximamente",
-        gallery: []
+        gallery: [],
+        infoLink: "https://wa.me/50432860065?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20fragata"
     },
     {
         folder: "Cabaña La Navio",
         cover: "",
         tag: "Próximamente",
-        gallery: []
+        gallery: [],
+        infoLink: "https://wa.me/50432860065?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20nav%C3%ADo"
     }
 ];
 
@@ -137,8 +145,13 @@ function createCabinCard(cabin, indexInView) {
         : "Espacio reservado. Esta cabaña aun no tiene fotografias cargadas.";
 
     const link = document.createElement("a");
-    link.href = "#contacto";
+    link.href = cabin.infoLink || "https://wa.me/50432860065?text=Hola%20necesito%20informacion%20sobre%20las%20caba%C3%B1as";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
     link.textContent = "Solicitar informacion";
+    link.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
 
     content.append(tag, title, text, link);
     article.append(content);
