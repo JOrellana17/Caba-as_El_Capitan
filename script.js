@@ -17,7 +17,7 @@ const cabinsData = [
         folder: "Cabaña Catalejo",
         cover: "1.jpg",
         tag: "Cabaña",
-        gallery: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"],
+        gallery: ["1.jpg", "11.jpg", "12.jpg", "13.jpg", "2.jpg", "3.jpg", "4(1).jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg"],
         infoLink: "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20catalejo"
     },
     {
@@ -25,11 +25,16 @@ const cabinsData = [
         cover: "0.jpg",
         tag: "Cabaña",
         gallery: [
-            "0.jpg",
             "0(1).jpg",
             "0(2).jpg",
             "0(3).jpg",
+            "0.jpg",
+            "0c1b61af-a95e-494b-8882-aaa1fd9c41dc.jpg",
+            "51918a9f-596b-491d-8267-c210510e9bd8.jpg",
             "abc33067-2c0f-479b-bc90-43a071959992.jpg"
+            ,"d0e50882-3ab0-4804-9103-0efc5d94f08f.jpg"
+            ,"da91a6ed-03ed-417e-aaac-ad52fdceb435.jpg"
+            ,"ee03d043-44d3-4455-b152-b7cc6d73dc37.jpg"
         ],
         infoLink: "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20estribor"
     },
@@ -38,11 +43,31 @@ const cabinsData = [
         cover: "1.jpg",
         tag: "Cabaña familiar",
         gallery: [
-            "1.jpg",
             "1(1).jpg",
             "1(2).jpg",
+            "1.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.28_31c2ff45.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.29_144c526f.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.29_3ecb0516.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.31_30d63bd5.jpg",
             "Imagen de WhatsApp 2025-08-24 a las 09.05.34_fccb1e98.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.35_0f547c94.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.35_1fedadc6.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.35_70ed909d.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.35_f82fae68.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.36_3d684604.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.36_5925552c.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.36_e3e29083.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.37_08825f67.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.37_3bdb2357.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.37_7dd1219d.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.37_fb44fb76.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.38_af9213ff.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.38_eda28062.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.39_5ae9ca37.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.05.39_cd58ad4e.jpg",
             "Imagen de WhatsApp 2025-08-24 a las 09.05.39_ec8af994.jpg"
+            ,"Imagen de WhatsApp 2025-08-30 a las 20.14.46_6321445c.jpg"
         ],
         infoLink: "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20familiar%20la%20perla"
     },
@@ -51,10 +76,15 @@ const cabinsData = [
         cover: "0.jpg",
         tag: "Cabaña",
         gallery: [
-            "0.jpg",
             "0(1).jpg",
             "0(2).jpg",
+            "0.jpg",
+            "14fc606d-0bff-406d-a06f-6f204f29f028.jpg",
+            "3b41e371-5031-498e-a003-10bf93150572.jpg",
             "47a4d81a-626b-4e63-aa96-0abffc2f4942.jpg",
+            "ca1dfd7f-83a0-43de-a142-7b5f3d410356.jpg",
+            "d319ba1f-9602-49b7-a0b5-72af315595cc.jpg",
+            "dad54963-97a4-4d12-8281-508d9805c0e2.jpg",
             "e628900c-51de-4ee6-954b-5f850a3cf698.jpg"
         ],
         infoLink: "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20timonel"
@@ -65,9 +95,20 @@ const cabinsData = [
         tag: "Habitación",
         gallery: [
             "Imagen de WhatsApp 2025-08-24 a las 09.07.47_55d2b011.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.07.47_fec30a52.jpg",
             "Imagen de WhatsApp 2025-08-24 a las 09.07.49_c0d64870.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.07.50_07c2c5fb.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.07.52_21ecfe21.jpg",
             "Imagen de WhatsApp 2025-08-24 a las 09.07.52_6cb7d3eb.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.07.52_db71f274.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.07.53_0ed27bde.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.07.53_27f15769.jpg",
             "Imagen de WhatsApp 2025-08-24 a las 09.07.54_555eb8b2.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.07.54_f5a0e0d1.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.07.56_6cd892fd.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.07.57_b57c352e.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.07.57_e4991e34.jpg",
+            "Imagen de WhatsApp 2025-08-24 a las 09.07.58_0248c4fb.jpg",
             "Imagen de WhatsApp 2025-08-24 a las 09.07.58_8918a9fa.jpg"
         ],
         infoLink: "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20la%20habitacion%20almeja"
@@ -273,64 +314,30 @@ function setupGalleryModal() {
 
 function setupCabinsRotation() {
     const grid = document.getElementById("lodging-grid");
-    const visibleCards = 3;
-    const stepMs = 10000;
     const galleryModal = setupGalleryModal();
 
     if (!grid || !cabinsData.length) {
         return;
     }
 
-    const groups = [];
-    for (let i = 0; i < cabinsData.length; i += visibleCards) {
-        groups.push(cabinsData.slice(i, i + visibleCards));
-    }
+    grid.innerHTML = "";
 
-    if (groups.length > 1 && groups.at(-1).length < visibleCards) {
-        const missing = visibleCards - groups.at(-1).length;
-        groups[groups.length - 1] = groups.at(-1).concat(cabinsData.slice(0, missing));
-    }
+    cabinsData.forEach((cabin, indexInView) => {
+        const card = createCabinCard(cabin, indexInView);
+        const openGallery = () => galleryModal.open(cabin);
 
-    let groupCursor = 0;
-
-    const render = () => {
-        grid.innerHTML = "";
-
-        const cardsToRender = groups[groupCursor] || cabinsData.slice(0, visibleCards);
-
-        cardsToRender.forEach((cabin, indexInView) => {
-            const card = createCabinCard(cabin, indexInView);
-            const openGallery = () => galleryModal.open(cabin);
-
-            card.addEventListener("click", openGallery);
-            card.addEventListener("keydown", (event) => {
-                if (event.key === "Enter" || event.key === " ") {
-                    event.preventDefault();
-                    openGallery();
-                }
-            });
-
-            grid.appendChild(card);
+        card.addEventListener("click", openGallery);
+        card.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                openGallery();
+            }
         });
 
-        setupInteractiveShadows(grid.querySelectorAll(".lodging-card"));
-    };
+        grid.appendChild(card);
+    });
 
-    const nextFrame = () => {
-        grid.classList.add("is-switching");
-
-        window.setTimeout(() => {
-            groupCursor = (groupCursor + 1) % groups.length;
-            render();
-            grid.classList.remove("is-switching");
-        }, 420);
-    };
-
-    render();
-
-    if (groups.length > 1) {
-        window.setInterval(nextFrame, stepMs);
-    }
+    setupInteractiveShadows(grid.querySelectorAll(".lodging-card"));
 }
 
 function setupMobileMenu() {
