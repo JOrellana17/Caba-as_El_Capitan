@@ -336,6 +336,7 @@ function setupCabinsRotation() {
 function setupMobileMenu() {
     const button = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".site-nav");
+    const compactMenuBreakpoint = 1024;
 
     if (!button || !nav) {
         return;
@@ -354,7 +355,7 @@ function setupMobileMenu() {
     });
 
     window.addEventListener("resize", () => {
-        if (window.innerWidth > 760) {
+        if (window.innerWidth > compactMenuBreakpoint) {
             nav.classList.remove("is-open");
             button.setAttribute("aria-expanded", "false");
         }
