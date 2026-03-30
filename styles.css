@@ -702,6 +702,22 @@ a {
     padding: 1.45rem;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.amenities-grid article:hover,
+.amenities-grid article:focus-within {
+    background: rgba(254, 213, 1, 0.2);
+    border-color: #fed501;
+    box-shadow: 0 0 0 1px rgba(254, 213, 1, 0.45), 0 16px 34px rgba(20, 14, 6, 0.34);
+    transform: translateY(-4px);
+}
+
+.amenities-grid article:hover h3,
+.amenities-grid article:focus-within h3,
+.amenities-grid article:hover p,
+.amenities-grid article:focus-within p {
+    color: #fff5cf;
 }
 
 .amenities-grid h3 {
