@@ -706,6 +706,7 @@ a {
 }
 
 .amenities-grid article:hover,
+.amenities-grid article.is-hovered,
 .amenities-grid article:focus-within {
     background: rgba(254, 213, 1, 0.9);
     border-color: #fed501;
@@ -714,10 +715,17 @@ a {
 }
 
 .amenities-grid article:hover h3,
+.amenities-grid article.is-hovered h3,
 .amenities-grid article:focus-within h3,
 .amenities-grid article:hover p,
+.amenities-grid article.is-hovered p,
 .amenities-grid article:focus-within p {
     color: #2b1c00;
+}
+
+.amenities-grid article:active {
+    background: rgba(254, 213, 1, 0.9);
+    border-color: #fed501;
 }
 
 .amenities-grid article p {
