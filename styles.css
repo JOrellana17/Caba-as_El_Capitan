@@ -441,6 +441,13 @@ a {
     color: var(--earth-deep);
 }
 
+.contact-whatsapp-button:hover,
+.contact-whatsapp-button:focus-visible {
+    background: #25d366;
+    color: var(--white);
+    box-shadow: 0 0 0 1px rgba(37, 211, 102, 0.35), 0 12px 28px rgba(37, 211, 102, 0.42);
+}
+
 .button-secondary {
     border: 1px solid rgba(255, 255, 255, 0.28);
     color: var(--white);
@@ -505,7 +512,7 @@ a {
 
 .hero-card {
     padding: 1.6rem;
-    background: rgba(255, 250, 244, 0.92);
+    background: rgba(255, 250, 244, 0.82);
     border: 1px solid rgba(91, 58, 41, 0.08);
 }
 
@@ -737,6 +744,37 @@ a {
     font-size: 1.55rem;
 }
 
+.amenity-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.amenity-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--white);
+}
+
+.amenity-icon svg {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.amenities-grid article:hover .amenity-icon,
+.amenities-grid article.is-hovered .amenity-icon,
+.amenities-grid article:focus-within .amenity-icon,
+.amenities-grid article:active .amenity-icon {
+    background: rgba(43, 28, 0, 0.12);
+    color: #2b1c00;
+}
+
 .story-grid {
     grid-template-columns: 1.2fr 0.85fr;
     align-items: stretch;
@@ -833,7 +871,17 @@ a {
 }
 
 .site-footer {
-    padding: 0 0 2rem;
+    position: static;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    background: rgba(54, 33, 23, 0.96);
+}
+
+.site-footer .container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
 }
 
 .gallery-modal {
@@ -937,16 +985,47 @@ a {
 
 .footer-grid {
     grid-template-columns: 1.1fr 0.7fr 0.7fr;
-    padding: 2rem;
-    background: rgba(54, 33, 23, 0.96);
+    width: 100%;
+    padding: 2.2rem clamp(1rem, 4vw, 2.5rem);
+    background: transparent;
     color: rgba(255, 255, 255, 0.88);
-    border-radius: 28px;
+    border-radius: 0;
 }
 
 .footer-grid a {
     display: block;
     margin: 0.45rem 0;
     text-decoration: none;
+}
+
+.footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.footer-link-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: currentColor;
+}
+
+.footer-link-icon svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+    color: #fedfb4;
 }
 
 @media (max-width: 1080px) {
@@ -1086,6 +1165,15 @@ a {
     .map-embed-card iframe {
         min-height: 21rem;
     }
+
+    .footer-grid {
+        padding: 1.9rem 1rem;
+        gap: 1rem;
+    }
+
+    .amenity-heading {
+        gap: 0.65rem;
+    }
 }
 
 @media (max-width: 520px) {
@@ -1172,5 +1260,28 @@ a {
 
     .map-embed-card iframe {
         min-height: 17rem;
+    }
+
+    .footer-grid {
+        padding: 1.5rem 0.85rem;
+    }
+
+    .amenity-icon {
+        width: 2.45rem;
+        height: 2.45rem;
+    }
+
+    .amenity-icon svg {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .footer-link {
+        gap: 0.6rem;
+    }
+
+    .footer-link-icon {
+        width: 1.8rem;
+        height: 1.8rem;
     }
 }
