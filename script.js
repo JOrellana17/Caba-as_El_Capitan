@@ -7,6 +7,7 @@ const selectorsForReveal = [
     ".amenities-grid article",
     ".story-copy",
     ".story-panel",
+    ".story-logo",
     ".reviews-grid blockquote",
     ".contact-card",
     ".footer-grid > div"
@@ -40,11 +41,11 @@ const cabinsData = [
     },
     {
         folder: "Cabaña Familiar La Perla",
-        cover: "Cabaña_Familiar_La_Perla_1.jpg",
+        cover: "Cabaña_Familiar_La_Perla_2.jpg",
         tag: "Cabaña familiar",
         gallery: [
-            "Cabaña_Familiar_La_Perla_1.jpg",
             "Cabaña_Familiar_La_Perla_2.jpg",
+            "Cabaña_Familiar_La_Perla_1.jpg",
             "Cabaña_Familiar_La_Perla_3.jpg",
             "Cabaña_Familiar_La_Perla_4.jpg",
             "Cabaña_Familiar_La_Perla_5.jpg",
@@ -113,10 +114,10 @@ const cabinsData = [
     },
     {
         folder: "Cabaña Fragata",
-        cover: "Cabaña_Fragata_1.jpeg",
+        cover: "Cabaña_Fragata_10.jpeg",
         tag: "Cabaña",
         gallery: [
-            "Cabaña_Fragata_1.jpeg",
+            "Cabaña_Fragata_10.jpeg",
             "Cabaña_Fragata_2.jpeg",
             "Cabaña_Fragata_3.jpeg",
             "Cabaña_Fragata_4.jpeg",
@@ -125,7 +126,7 @@ const cabinsData = [
             "Cabaña_Fragata_7.jpeg",
             "Cabaña_Fragata_8.jpeg",
             "Cabaña_Fragata_9.jpeg",
-            "Cabaña_Fragata_10.jpeg",
+            "Cabaña_Fragata_1.jpeg",
             "Cabaña_Fragata_11.jpeg",
             "Cabaña_Fragata_12.jpeg",
             "Cabaña_Fragata_13.jpeg",
@@ -229,7 +230,7 @@ function createCabinCard(cabin, indexInView) {
 
     const text = document.createElement("p");
     text.textContent = cabin.gallery.length
-        ? "Toca la imagen para abrir la galeria de esta cabaña."
+        ? "Toca la imagen para abrir la galeria de imagenes."
         : "Espacio reservado. Esta cabaña aun no tiene fotografias cargadas.";
 
     const link = document.createElement("a");
