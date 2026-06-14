@@ -257,6 +257,7 @@ function setupGalleryModal() {
     const prev = document.getElementById("gallery-prev");
     const next = document.getElementById("gallery-next");
     let touchStartX = 0;
+    let lastFocusedElement = null;
 
     if (!modal || !frame || !image || !title || !counter || !empty || !prev || !next) {
         return {
@@ -284,17 +285,26 @@ function setupGalleryModal() {
     };
 
     const close = () => {
+        if (modal.contains(document.activeElement)) {
+            document.activeElement.blur();
+        }
         modal.classList.remove("is-open");
         modal.setAttribute("aria-hidden", "true");
+
+        if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
+            lastFocusedElement.focus({ preventScroll: true });
+        }
     };
 
     const open = (cabin) => {
+        lastFocusedElement = document.activeElement;
         galleryState.folder = cabin.folder;
         galleryState.images = cabin.gallery;
         galleryState.index = 0;
         renderGallery();
         modal.classList.add("is-open");
         modal.setAttribute("aria-hidden", "false");
+        modal.querySelector(".gallery-close").focus({ preventScroll: true });
     };
 
     prev.addEventListener("click", () => {
