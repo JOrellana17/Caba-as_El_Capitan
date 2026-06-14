@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jorellana17.github.io/cabanas-el-capitan/sitemap.xml

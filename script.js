@@ -214,7 +214,7 @@ function createCabinCard(cabin, indexInView) {
         article.classList.add("no-image");
         const placeholder = document.createElement("div");
         placeholder.className = "image-placeholder";
-        placeholder.textContent = "Imagen disponible próximamente";
+        placeholder.textContent = "Imagen no disponible";
         article.append(placeholder);
     }
 
@@ -231,7 +231,7 @@ function createCabinCard(cabin, indexInView) {
     const text = document.createElement("p");
     text.textContent = cabin.gallery.length
         ? "Toca la imagen para abrir la galeria de imagenes."
-        : "Espacio reservado. Esta cabaña aun no tiene fotografias cargadas.";
+        : "Consulta por WhatsApp para conocer esta estancia.";
 
     const link = document.createElement("a");
     link.href = cabin.infoLink || "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20las%20caba%C3%B1as";
